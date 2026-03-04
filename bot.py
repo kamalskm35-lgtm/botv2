@@ -31,7 +31,7 @@ scope = [
 
 creds = Credentials.from_service_account_info(creds_dict, scopes=scope)
 client = gspread.authorize(creds)
-spreadsheet = client.open(SPREADSHEET_NAME)
+spreadsheet = client.open_by_key(19VF-vlkNkHAE_Uq6M6_BLNAIblmW3QgE88urfI2JPh4)
 
 logging.basicConfig(level=logging.INFO)
 
